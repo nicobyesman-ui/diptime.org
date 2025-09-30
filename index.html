@@ -3,45 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DipTime Funding</title>
+  <title>DipTime™ Funding</title>
   <style>
     :root{
       --bg:#0b1020; --card:#121830; --ink:#eaf2ff; --muted:#9ab0ff;
-      --brand:#6ea8ff; --brand2:#8affcb; --accent:#ffd166;
+      --brand:#6ea8ff; --brand2:#8affcb;
     }
     *{box-sizing:border-box}
-    body{
-      margin:0; font:16px/1.55 system-ui,Segoe UI,Roboto,Helvetica,Arial;
-      color:var(--ink); background:radial-gradient(1200px 600px at 80% -10%, #1d2a59 0%, transparent 60%), var(--bg);
-    }
+    body{margin:0; font:16px/1.55 system-ui,Segoe UI,Roboto,Helvetica,Arial; color:var(--ink);
+         background:radial-gradient(1200px 600px at 80% -10%, #1d2a59 0%, transparent 60%), #0b1020;}
     a{color:var(--brand)}
-    header{
-      padding:28px 18px; max-width:1080px; margin:0 auto; display:flex; gap:16px; align-items:center; justify-content:space-between;
-    }
-    .logo{font-weight:800; letter-spacing:.4px}
+    header{padding:22px 18px; max-width:1080px; margin:0 auto; display:flex; gap:16px; align-items:center; justify-content:space-between}
+    nav a{margin:0 10px; text-decoration:none}
     .chip{font-size:12px; padding:6px 10px; border-radius:999px; background:#1a2347; color:var(--muted); border:1px solid #253064}
-    .hero{
-      max-width:1080px; margin:18px auto 0; padding:28px 18px 10px; display:grid; grid-template-columns:1.2fr .8fr; gap:28px;
-    }
-    h1{font-size:42px; line-height:1.15; margin:.2em 0 .25em}
+    .hero{max-width:1080px; margin:8px auto 0; padding:18px; display:grid; grid-template-columns:1.2fr .8fr; gap:28px}
+    h1{font-size:40px; line-height:1.15; margin:.2em 0 .25em}
     p.lead{font-size:18px; color:var(--muted); margin:.2em 0 1.2em}
-    .card{
-      background:linear-gradient(180deg, #12193a 0%, #0f1430 100%); border:1px solid #273266; border-radius:18px; padding:22px;
-      box-shadow:0 10px 30px rgba(0,0,0,.35);
-    }
-    .btn{
-      appearance:none; border:none; cursor:pointer; border-radius:12px; padding:12px 16px; font-weight:600;
-    }
+    .card{background:linear-gradient(180deg, #12193a 0%, #0f1430 100%); border:1px solid #273266; border-radius:18px; padding:22px; box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    .btn{appearance:none; border:none; cursor:pointer; border-radius:12px; padding:12px 16px; font-weight:600}
     .btn-primary{background:linear-gradient(90deg,var(--brand) 0%, #5bd4ff 100%); color:#041023}
     .btn-ghost{background:#18204a; color:var(--ink); border:1px solid #2a3770}
     .row{display:flex; flex-wrap:wrap; gap:10px}
     .spacer{height:12px}
-    input.input{
-      background:#0f1536; color:var(--ink); border:1px solid #2a3770; padding:12px 14px; border-radius:12px; min-width:200px
-    }
+    input.input{background:#0f1536; color:var(--ink); border:1px solid #2a3770; padding:12px 14px; border-radius:12px; min-width:200px}
     .mini{font-size:12px; color:#a3b5ff}
     .grid{display:grid; gap:16px}
-    .shadow{box-shadow:0 10px 26px rgba(0,0,0,.35)}
     footer{max-width:1080px; margin:28px auto; padding:0 18px 40px; color:var(--muted); font-size:14px}
     @media (max-width:900px){ .hero{grid-template-columns:1fr} }
   </style>
@@ -50,107 +36,105 @@
 
 <header>
   <div class="row" style="gap:8px;align-items:center">
-    <div class="logo">DipTime</div>
+    <div style="font-weight:800; letter-spacing:.4px">DipTime™</div>
     <div class="chip">Phase 1 • Funding</div>
   </div>
-  <a class="chip" href="#contribute">Contribute</a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#funds">Use of Funds</a>
+    <a href="news.html">News</a>
+    <a href="#faq">FAQ</a>
+    <a class="chip" href="#contribute">Contribute</a>
+  </nav>
 </header>
 
 <section class="hero">
   <div>
-    <h1>Help launch DipTime™</h1>
+    <h1 id="about">Let’s fund DipTime™ Phase 1</h1>
     <p class="lead">
-      A new way to encode, move and store data efficiently.  
-      We’re raising funds to complete **Phase 1** (patent, prototype hardening, and security review).
+      DipTime™ is a **novel data transmission & storage approach** under active development.  
+      We’re keeping core IP confidential until filings are complete. Investors and strategic partners can receive a summary under NDA.
     </p>
 
     <div class="grid">
       <div class="card">
-        <h3 style="margin:0 0 6px">What your contribution does</h3>
+        <h3 style="margin:0 0 6px">What your contribution enables</h3>
         <ul style="margin:.2em 0 0 1.1em; color:var(--muted)">
-          <li>Files the first local patent (then international readiness).</li>
-          <li>Stabilises the demo into a production-grade SDK.</li>
-          <li>Independent security & performance validation.</li>
+          <li>Local patent filing and trademarks (then international readiness).</li>
+          <li>Hardening the current demo into a production-ready SDK.</li>
+          <li>Independent validation (performance & security).</li>
         </ul>
+        <p class="mini" style="margin-top:10px">
+          (Detailed technical materials are available to qualified partners under NDA.)
+        </p>
       </div>
 
-      <div class="card">
-        <h3 id="contribute" style="margin:0 0 10px">Contribute securely (PayFast)</h3>
+      <div class="card" id="contribute">
+        <h3 style="margin:0 0 10px">Contribute securely (PayFast)</h3>
 
-        <!-- ===== PayFast FORM (LIVE) ===== -->
-        <form id="payfastForm" action="https://www.payfast.co.za/eng/process" method="POST" style="margin:16px 0">
-          <!-- Required merchant fields -->
+        <!-- PayFast: LIVE post (simple mode) -->
+        <form action="https://www.payfast.co.za/eng/process" method="POST" style="margin:16px 0">
+          <!-- Merchant -->
           <input type="hidden" name="merchant_id"  value="15256121" />
           <input type="hidden" name="merchant_key" value="rmbgvybcjspta" />
-
-          <!-- Item info -->
+          <!-- Item -->
           <input type="hidden" name="item_name" value="DipTime Phase 1 Contribution" />
           <input type="hidden" name="m_payment_id" value="dipt-pledge-001" />
           <input type="hidden" name="email_confirmation" value="1" />
           <input type="hidden" name="confirmation_address" value="funds@diptime.org" />
-
           <!-- Redirects -->
           <input type="hidden" name="return_url" value="https://nicobyesman-ui.github.io/diptime.org/thanks.html" />
           <input type="hidden" name="cancel_url" value="https://nicobyesman-ui.github.io/diptime.org/#contribute" />
-          <!-- If you later host an IPN endpoint on your server, replace this: -->
+          <!-- IPN placeholder (optional, add your server later) -->
           <input type="hidden" name="notify_url" value="https://example.com/payfast/ipn" />
-
-          <!-- Amount (updated by buttons or custom field) -->
-          <input type="hidden" id="amountField" name="amount" value="25.00" />
+          <!-- Amount -->
+          <input type="hidden" id="amountField" name="amount" value="250.00" />
 
           <div class="row">
-            <button type="button" class="btn btn-ghost" onclick="setAmt(25)">R 25</button>
             <button type="button" class="btn btn-ghost" onclick="setAmt(100)">R 100</button>
-            <button type="button" class="btn btn-ghost" onclick="setAmt(500)">R 500</button>
-            <button type="button" class="btn btn-ghost" onclick="setAmt(2000)">R 2 000</button>
+            <button type="button" class="btn btn-ghost" onclick="setAmt(250)">R 250</button>
+            <button type="button" class="btn btn-ghost" onclick="setAmt(1000)">R 1 000</button>
+            <button type="button" class="btn btn-ghost" onclick="setAmt(5000)">R 5 000</button>
           </div>
           <div class="spacer"></div>
           <div class="row">
-            <input class="input" type="number" step="0.01" min="5" placeholder="Enter custom amount (R)" oninput="setAmt(this.value)" />
+            <input class="input" type="number" step="0.01" min="25" placeholder="Enter custom amount (R)" oninput="setAmt(this.value)" />
             <button class="btn btn-primary" type="submit">Contribute via PayFast</button>
           </div>
           <p class="mini">You’ll be redirected to PayFast to complete payment securely.</p>
         </form>
-        <!-- ===== /PayFast FORM ===== -->
-
       </div>
     </div>
   </div>
 
-  <div class="card shadow">
-    <h3 style="margin:0 0 8px;">Stay in the loop</h3>
-    <p class="mini" style="margin-top:0">
-      Get milestone updates (no spam). We’ll mail when patents are filed and the SDK drops.
-    </p>
-    <form action="mailto:updates@diptime.org" method="post" enctype="text/plain">
-      <div class="row">
-        <input class="input" type="email" name="email" placeholder="your@email.com" required />
-        <button class="btn btn-ghost" type="submit">Subscribe</button>
-      </div>
-      <p class="mini">Opens your mail app with a prefilled subscription email.</p>
-    </form>
+  <div class="card">
+    <h3 id="funds" style="margin:0 0 8px;">Use of Funds</h3>
+    <ul style="margin:.2em 0 0 1.1em; color:var(--muted)">
+      <li>Legal: provisional filing + trademarks + PCT readiness</li>
+      <li>Engineering: SDK, tests, documentation</li>
+      <li>Independent validation & reporting</li>
+      <li>Minimal ops (hosting, security, compliance)</li>
+    </ul>
 
     <hr style="border:0;border-top:1px solid #273266;margin:18px 0">
-    <h4 style="margin:0 0 8px;">Questions?</h4>
-    <p class="mini" style="margin-top:0">
-      Email <a href="mailto:hello@diptime.org">hello@diptime.org</a> for partnership or investor info.
-    </p>
+    <h4 id="faq" style="margin:0 0 8px;">FAQ (short)</h4>
+    <p class="mini"><b>What is DipTime?</b> A new data approach. Public details are limited until filings are complete.</p>
+    <p class="mini"><b>Partnerships?</b> Email <a href="mailto:hello@diptime.org">hello@diptime.org</a> — we can share a summary under NDA.</p>
+    <p class="mini"><b>Updates?</b> See <a href="news.html">News</a> or subscribe by mailing <a href="mailto:updates@diptime.org">updates@diptime.org</a>.</p>
   </div>
 </section>
 
 <footer>
   © <span id="y"></span> DipTime™ • All rights reserved.
-  <br>Security note: For production scale we’ll add server-side signatures and IPN verification with PayFast.
+  <br><span class="mini">For production scale we’ll add server-side signatures and IPN verification with PayFast.</span>
 </footer>
 
 <script>
   function setAmt(v){
-    var a = document.getElementById('amountField');
-    var n = parseFloat(v||0);
-    if(!isFinite(n) || n <= 0){ return; }
-    a.value = n.toFixed(2);
+    var a=document.getElementById('amountField'); var n=parseFloat(v||0);
+    if(!isFinite(n)||n<=0){return;} a.value=n.toFixed(2);
   }
-  document.getElementById('y').textContent = new Date().getFullYear();
+  document.getElementById('y').textContent=new Date().getFullYear();
 </script>
 
 </body>
